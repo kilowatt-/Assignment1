@@ -1,12 +1,15 @@
+
 <html>
 	<head>
+		<title>Twattr</title>
 		<script src="script.js"></script>
-		<link rel="style.css" type="text/css"></link>
+		<link rel="stylesheet" href="style.css" type="text/css"></link>
+		
 	</head>
 
-	<body>
+	<body onload="onLoad();">
 		<header>
-			<h1>Messengr</h1>
+			<h1>Twattr</h1>
 			<nav>
 				<ul>
 					<a href="index.html">Home</a>
@@ -17,28 +20,30 @@
 
 		<div id="content">
 
+			<h2>Messages</h2>
+
 			<div id="messages">
 				<ul id="messageList">
-					<li>Message 1</li>
-					<li>Message 2</li>
-					<li>Message 3</li>
+					
 				</ul>
 			</div>
 
 			<div id="post">
 				<h2>Post a message</h2>
-				<form>
-					Name: <input type="text" id="name"></input><br />
-					
-				</form>
+			
+					Name: <input type="text" id="name" width="80px"></input><br />
+					Message (max 200 characters): <br />
+					<textarea rows="10" cols="80" id="messageArea"></textarea><br />
+
+					<button onclick="submitMessage();">Submit</button> <button onclick="clearMessages();">Clear Messages</button><br /> 
+
+					<span id="error"></span>
 			</div>
 		</div>
 
 		<footer>
 			<span>&copy; 2019 Kean Wah Wong</span>
 		</footer>
-
-
 
 
 	</body>

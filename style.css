@@ -1,0 +1,90 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	background-color:#EEE;
+}
+header {
+	width: 100%;
+	background-image: linear-gradient(rgb(14, 87, 204), rgb(8, 45, 104));
+	color: white;
+}
+
+header h1 {
+	position: relative; left: 50%;
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+nav {
+	border-top: 2px solid dotted;
+	background-color: silver;
+}
+
+nav ul {
+	position: relative; left: 50%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+
+nav a:hover {
+	background-color: blue;
+	color: white;
+}
+
+nav a:active {
+	background-color: blue;
+	color: white;
+}
+
+#content {
+	margin-left: 3%;
+	min-height:70%;
+}
+
+
+#messageList  {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#messageList li {
+	border: 1px solid black;
+	margin-bottom: 5px;
+	width: 95%;
+}
+
+#messageList li span {
+	font-weight: bold;
+}
+
+#error {
+	font-weight: bold;
+	color: red
+}
+
+
+footer {
+	color: white;
+	background-image: linear-gradient(rgb(14, 87, 204), rgb(8, 45, 104));
+	height: 100%;
+}
+
+footer span {
+	position: relative; left: 50%;
+}
